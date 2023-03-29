@@ -1,0 +1,7 @@
+Vehicle Id:xxxxxxx
+Vehicle Name:abcxyz
+current count in vehicle:5
+Longitude:78.824135
+Latitude:14.467354
+Sorce:xyxyxyxy
+Destination:zxzzcxzzx
