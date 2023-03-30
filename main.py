@@ -1,5 +1,5 @@
 from flask import Flask,render_template,request,redirect,flash,session,url_for
-import mysql.connector
+import psycopg2
 import pandas as pd
 import string
 import random
@@ -13,7 +13,11 @@ from email.mime.text import MIMEText
 from datetime import datetime
 app=Flask(__name__)
 app.config['SECRET_KEY'] = 'the random string'
-mydb = mysql.connector.connect(host="dpg-cgi69aak728gl5vbr07g-a", user="admin", passwd="Ipjv161S2sXKvJmkinvymGTiVz08tsNM", database="cyber_security",port="5432")
+mydb = psycopg2.connect(
+        host="dpg-cgi69aak728gl5vbr07g-a",
+        database="cyber_security",
+        user='admin',
+        password='Ipjv161S2sXKvJmkinvymGTiVz08tsNM',port='5432')
 cursor = mydb.cursor()
 
 
